@@ -1,0 +1,38 @@
+body {
+    font-family: cursive;
+    background-image: linear-gradient(to left, #111111, #111011, #101012, #0f0f12, #0e0f13, #0e0f13, #0e0f14, #0e0f14, #0f0f14, #0f0f14, #101014, #101014);
+    background-attachment: fixed;
+    color: #d7d7d7;
+    display: flex;
+    justify-content: center;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8rem;
+    gap: 9rem;
+}
+.logo__content {
+    display: flex;
+    align-items: center;
+    max-height: 80rem;
+}
+.logo__content img {
+    height: 10rem;
+    padding: 2rem;
+}
+.navigation ul{
+    display: flex;  
+    gap: 3rem;
+    font-size: 1.8rem;
+}
+.logo__umbra img {
+    height: 10rem;
+    padding: 2rem;
+}
