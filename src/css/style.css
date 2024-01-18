@@ -76,7 +76,21 @@ header {
     gap: 3rem;
 }
 .card img{
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     border-radius: 5rem;
+    margin-left: 2rem;
+}
+
+#inicio {
+    position: fixed;
+    left: 0rem;
+    z-index: -11;
+}
+
+#inicio img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100vw;
+    image-rendering: pixelated;
 }
