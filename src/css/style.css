@@ -1,96 +1,109 @@
-body {
-    font-family: cursive;
-    background-image: linear-gradient(to left, #111111, #111011, #101012, #0f0f12, #0e0f13, #0e0f13, #0e0f14, #0e0f14, #0f0f14, #0f0f14, #101014, #101014);
-    background-attachment: fixed;
-    color: #d7d7d7;
-    display: flex;
-    justify-content: center;
-}
-
 :root {
     font-size: 62.5%;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 8rem;
+body {
+    background-color: #181818;
+    background-attachment: fixed;
+    color: #d7d7d7;
+    display: block;
+
+    font-family: "Rubik";
+}
+
+.banner__content {
+    position: relative;
+
+    background:
+        linear-gradient(to right,
+            rgba(0, 0, 0, .3), rgb(10, 10, 10, .7)),
+        url("../assets/images/recursos/Banner.png");
+    height: 35rem;
     width: 100vw;
-    gap: 2rem;
-    border-bottom: .1px solid rgba(255, 255, 255, .2);
-}
-.logo__content {
+    left: 0;
+    background-size: cover;
+    z-index: -111;
+    background-position: left;
+
     display: flex;
-    align-items: center;
-    max-height: 80rem;
-}
-.logo__content img {
-    height: 10rem;
-    padding: 2rem;
-}
-.navigation ul{
-    display: flex;  
-    gap: 5rem;
-    font-size: 1.8rem;
-}
-.logo__umbra img {
-    height: 10rem;
-    padding: 2rem;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.icon__category {
+.banner__content::after {
+    z-index: -2;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 35rem;
+    width: 80vw;
+    background: linear-gradient(-233deg, rgba(0, 0, 0, .6) 50%, rgba(0, 0, 0, 0) 60%) no-repeat;
+}
+
+
+.banner__title {
+    margin-left: 5rem;
+}
+
+.banner__title {
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-top: 3rem;
+    font-family: "Black Ops One";
+}
+
+.banner__content .description {
+    margin-top: 2rem;
+    font-size: 2rem;
+    word-break: normal;
+    line-height: 2.7rem;
+    width: 45rem;
+}
+
+
+.apresentation, .organizacoes {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+    width: 100vw;
+}
+.description__content{
+    display: flex;
+    gap: 7rem;
+}
+.description__content img{
+    width: 30rem;
+}
+.description{
+    font-family: "Rubik";
+    text-align: center;
+    align-self: center;
+    font-size: 2rem;
+    width: 60rem;
+    padding: 3rem;
+}
+
+.apresentation h1, h2{
+    margin: 7.2rem 0;
     font-size: 4rem;
-    margin-top: -7rem;
+    text-transform: uppercase;
 }
-.category {
-    display: flex;
-    flex-direction: column;
 
-    justify-content: space-around;
+.acm {
+    display: flex;
     align-items: center;
-    position: absolute;
-    right: 1rem;
-    border-left: .1px solid rgba(255, 255, 255, .2);
-    height: 100vh;
-}
-.category ul{
-    display: flex;
-    flex-direction: column;
-    font-size: 1.8rem;
-    gap: 15rem;
-}
-
-
-.category li {
-    transform: rotate(90deg);
-}
-.left__content {
-    position: absolute;
-    left: 1px;
-    top: 8rem;
-}
-.cards {
-    display: flex;
-    flex-direction: column;
     gap: 3rem;
 }
-.card img{
-    width: 8rem;
-    height: 8rem;
-    border-radius: 5rem;
-    margin-left: 2rem;
+.acm h2{
+    font-size: 3rem;
+    text-transform: uppercase;
 }
 
-#inicio {
-    position: fixed;
-    left: 0rem;
-    z-index: -11;
-}
-
-#inicio img {
-    object-fit: cover;
-    overflow: hidden;
-    width: 100vw;
-    image-rendering: pixelated;
+.acm img {
+    width: 15rem;
 }
