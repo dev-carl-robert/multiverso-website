@@ -17,7 +17,7 @@ body {
     background:
         linear-gradient(to right,
             rgba(0, 0, 0, .3), rgb(10, 10, 10, .7)),
-        url("../assets/images/recursos/Banner.png");
+        url("../assets/recursos/Banner.png");
     height: 35rem;
     width: 100vw;
     left: 0;
@@ -94,16 +94,94 @@ body {
     text-transform: uppercase;
 }
 
-.acm {
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
-    gap: 3rem;
+    justify-content: center;
 }
-.acm h2{
-    font-size: 3rem;
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    position: relative;
+    width: 80px;
+    border: .75rem;
+    /* background-size: cover; */
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card img {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.row {
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.icon {
+    background-color: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.description__card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 520px;
+    height: 80px;
+    opacity: 0;
+    transform: translateY(320px);
+    transition-delay: .3s;
+    transition: all .3 ease;
+}
+
+.description__card p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description__card h1 {
     text-transform: uppercase;
 }
 
-.acm img {
-    width: 15rem;
+input {
+    display: none;
+}
+
+input:checked+label {
+    width: 600px;
+}
+
+input:checked+label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
