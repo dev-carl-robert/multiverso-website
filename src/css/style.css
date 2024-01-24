@@ -61,6 +61,15 @@ body {
     line-height: 2.7rem;
     width: 45rem;
 }
+.write {
+    font-family: cursive;
+    font-size: 1.3rem;
+    opacity: .7;
+    position: absolute;
+    bottom: 2rem;
+    width: 100vw;
+}
+
 
 
 .apresentation, .organizacoes {
@@ -68,7 +77,7 @@ body {
     flex-direction: column;
     margin: 2rem;
     justify-content: center;
-    gap: 4rem;
+    gap: 3rem;
     align-items: center;
     width: 100vw;
 }
@@ -78,6 +87,7 @@ body {
 }
 .description__content img{
     width: 30rem;
+    border-radius: 2rem;
 }
 .description{
     font-family: "Rubik";
@@ -92,96 +102,4 @@ body {
     margin: 7.2rem 0;
     font-size: 4rem;
     text-transform: uppercase;
-}
-
-
-.wrapper {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container {
-    height: 400px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: start;
-}
-
-.card {
-    position: relative;
-    width: 80px;
-    border: .75rem;
-    /* background-size: cover; */
-    cursor: pointer;
-    overflow: hidden;
-    border-radius: 2rem;
-    margin: 0 10px;
-    display: flex;
-    align-items: flex-end;
-    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
-}
-
-.card img {
-    object-fit: cover;
-    object-position: top;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-}
-
-.row {
-    position: absolute;
-    color: white;
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.icon {
-    background-color: #223;
-    color: white;
-    border-radius: 50%;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-}
-
-.description__card {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    overflow: hidden;
-    width: 520px;
-    height: 80px;
-    opacity: 0;
-    transform: translateY(320px);
-    transition-delay: .3s;
-    transition: all .3 ease;
-}
-
-.description__card p {
-    color: #b0b0ba;
-    padding-top: 5px;
-}
-
-.description__card h1 {
-    text-transform: uppercase;
-}
-
-input {
-    display: none;
-}
-
-input:checked+label {
-    width: 600px;
-}
-
-input:checked+label .description {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
 }
